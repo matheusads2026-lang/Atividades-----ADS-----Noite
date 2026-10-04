@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vagas de Estágio</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Vagas de Estágio</h1>
+    </header>
+
+    <main>
+      <section class="cadastro">
+        <h2>Cadastrar Vaga</h2>
+
+        <form id="formVaga">
+          <label for="empresa">Empresa</label>
+          <input type="text" id="empresa" required />
+
+          <label for="vaga">Vaga</label>
+          <input type="text" id="vaga" required />
+
+          <label for="local">Local</label>
+          <input type="text" id="local" required />
+
+          <label for="descricao">Descrição</label>
+          <textarea id="descricao" required></textarea>
+
+          <button type="submit">Cadastrar Vaga</button>
+        </form>
+      </section>
+
+      <section class="lista">
+        <h2>Vagas Disponíveis</h2>
+
+        <div class="tabela">
+          <table>
+            <thead>
+              <tr>
+                <th>Empresa</th>
+                <th>Vaga</th>
+                <th>Local</th>
+                <th>Descrição</th>
+                <th>Ação</th>
+              </tr>
+            </thead>
+
+            <tbody id="listaVagas"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Frete</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Calculadora de Frete</h1>
+
+      <p class="origem">
+        Origem: UNINASSAU - Rua Germano Franck, 613, Fortaleza - CE
+      </p>
+
+      <form id="formulario">
+        <label for="cep">Digite o CEP do destino:</label>
+
+        <input
+          type="text"
+          id="cep"
+          placeholder="Ex: 60740-020"
+          maxlength="9"
+          required
+        />
+
+        <button type="submit">Calcular frete</button>
+      </form>
+
+      <div id="resultado" class="resultado"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
